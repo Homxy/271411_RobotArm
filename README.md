@@ -15,5 +15,9 @@
 
 ## เทคนิคสำคัญที่ใช้
 <ul>
-  <li>**Map พิกัดของกล้องกับพิกัดของ MG400 โดยใช้ฟังก์ชันcv2.getPerspectiveTransform(camera_points, world_points)**</li>
+  <li>Map พิกัดของกล้องกับพิกัดของ MG400 โดยใช้ฟังก์ชันcv2.getPerspectiveTransform(camera_points, world_points)</li>
+  <li>การแก้ไขความคลาดเคลื่อนของภาพ อันเนื่องมาจากความนูนของเลนส์กล้อง</li>
+  <li>การกำจัด nosie ด้วย Morphology</li>
+  <li>การ Detect กล่องสีต่างๆ ด้วยการทำช่วง HSV ต่ำสุด-สูงสุด และใช้การหา Centroid ในเพื่อทำ Contour</li>
+  <li>การส่งข้อมูลผ่าน TCP/IP ด้วยการ steam ข้อมูลพิกัดและสีของกล่องสีในพื้นที่ทำงาน</li>
 </ul>
